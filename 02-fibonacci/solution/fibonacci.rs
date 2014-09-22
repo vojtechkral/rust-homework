@@ -1,10 +1,7 @@
-fn main() {
-	fibonacci(20i);
-}
 
 fn fibonacci(depth: int) {
-	let mut old : u64 = 0; //fibonacci(i - 1) - value of previous iteration
-	let mut older: u64 = 0; //fibonacci(i - 2) -value of pre-previous iteration
+	let mut old : u64 = 0;  // fibonacci(i - 1) - value of previous iteration
+	let mut older: u64 = 0; // fibonacci(i - 2) - value of pre-previous iteration
 
 	for i in range(0u64,depth as u64) {
 
@@ -19,4 +16,8 @@ fn fibonacci(depth: int) {
 			old = fibonaci_number;
 		}
 	}
+}
+
+fn main() {
+	fibonacci(20i);
 }
