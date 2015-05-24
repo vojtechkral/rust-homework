@@ -1,11 +1,10 @@
-
-fn fibonacci(depth: int) {
+fn fibonacci(depth: u64) {
 	let mut old : u64 = 0;  // fibonacci(i - 1) - value of previous iteration
 	let mut older: u64 = 0; // fibonacci(i - 2) - value of pre-previous iteration
 
-	for i in range(0u64,depth as u64) {
+	for i in 0..depth  {
 
-		if i == 0u64 || i == 1u64 {
+		if i == 0 || i == 1 {
 			older = old;
 			old = i;
 			println!("Fib({}) = {}",i, i);
@@ -19,5 +18,5 @@ fn fibonacci(depth: int) {
 }
 
 fn main() {
-	fibonacci(20i);
+	fibonacci(20);
 }
